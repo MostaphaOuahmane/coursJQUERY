@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>intraductaio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="display-4">Cours JQuery -Introduction</h1>
+          <p>JQuery:Write less do more</p>
+        </div>
+      </div>
+    </header>
+    <main class="container border border-primary p-2">
+      <div class="row">
+        <div class="col-6">
+          <h2>1/JQuery est une API</h2>
+          <p>
+            JQuery est ce qu'on appelle une bibliothèque ou une API (application
+            programming interface) Javascript, c'est à dire un ensemble de
+            fonctions qui permettent d'écrire de manière condensée, les lignes
+          </p>
+          de codes les plus utilisées en Javascript.
+          <p class="small">
+            La version 1.0 stable de JQuery a été crée en aout 2006 par un jeune
+            homme de 22 ans du nom de John RESIG. Aujourd’hui nous en sommes à :
+            JQuery JavaScript Library v3.5.1
+          </p>
+          <p>
+            on oeut trouve <a href="#" target="blank">JQueryà cette adresse</a>
+          </p>
+        </div>
+        <div class="col-6">
+          <h3>JQuery écrit d'une manière plus condensée</h3>
+          <p>
+            Bootstrap 5 is designed to be used without jQuery, but it’s still
+            possible to use our components with jQuery. If Bootstrap detects
+            jQuery in the window object it’ll add all of our components in
+            jQuery’s plugin system; this means you’ll be able to do
+            $('[data-bs-toggle="tooltip"]').tooltip() to enable tooltips. The
+            same goes for our other components. source:
+            https://getbootstrap.com/docs/5.1/getting-started/javascript/#still-want-to-use-jquery-its-possible
+          </p>
+        </div>
+        <div class="col-12 bg-light border border-wrning">
+          <h4>Exemple</h4>
+          <ul>
+            <li>javascript <code></code></li>
+            <li>jQuery <code></code></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="jquery/jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        //ici mon code à éxécuter
+        confirm("Bienvenue sur cette page qui utilise jQuery.");
+        console.log("jQuery est actif");
+      });
+
+      //il existe 3 manières, de plus en plus simples, d'appeler jQuery
+      //1ère méthode
+      jQuery(document).ready(function () {
+        //ici mon code à exécuter
+        console.info("1ère méthode");
+      });
+
+      //2ème méthode
+      jQuery(function () {
+        //ici mon code à exécuter
+        console.info("2ème méthode");
+      });
+
+      // 3ème méthode
+      $(function () {
+        //ici mon code à exécuter
+        console.info("3ème méthode");
+      });
+    </script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
